@@ -1,0 +1,486 @@
+:root{
+    --brownlight : #A9907E;
+    --cream : #F3DEBA;
+    --tosca : #ABC4AA;
+    --darkbrown: #675D50;
+}
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Fredoka', sans-serif;
+}
+
+header.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem 1.5rem;
+    z-index: 9999;
+    background-color: var(--darkbrown);
+}   
+
+header.navbar-container .logo, .navbar-container .navbar-list, .navbar-container .navbar-extra{
+    display: flex;
+    align-items: center;
+}
+
+header.navbar-container .logo img{
+    height: 35px;
+}
+
+.navbar-container .navbar-list ul{
+    display: flex;
+    gap: 2rem;
+}
+
+header.navbar-container .navbar-list ul li:nth-child(6){
+    display: none;
+}
+
+.navbar-container .navbar-list li{
+    list-style-type: none;
+}
+
+.navbar-container .navbar-list ul li a{
+    font-size: 1.2rem;
+    color: var(--cream);
+    text-decoration: none;
+}
+
+.navbar-container .navbar-list ul li a:hover{
+    color: var(--tosca);
+    width: 100%;
+}
+
+.navbar-container .navbar-extra a:nth-child(1){
+    margin-right: 1rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--darkbrown);
+    background-color: var(--cream);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.navbar-container .navbar-extra a{
+    color: var(--cream);
+}
+
+.navbar-container .navbar-extra a:hover{
+    color: var(--tosca);
+}
+
+.navbar-container .navbar-extra #menu{
+    display: none;
+}
+
+main .home{
+    min-height: 100vh;
+    background-image: url(../img/header.png);
+    background-color: var(--cream);
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 110vh;
+}
+
+main .home .content{
+    padding-top: 5%;
+}
+
+main .home .social-media ul li:nth-child(1){
+    margin-bottom: 2rem;
+}
+
+main .home .social-media ul li:nth-child(1), main .home .social-media ul li:nth-child(2){
+    background-color: var(--cream);
+    padding: 0.5rem;
+    border-radius: 9999px;
+    line-height: 0.5rem;
+    box-shadow: 0 0 2px 1.5px var(--darkbrown);
+}
+
+main .home .social-media ul li{
+    list-style-type: none;
+}
+
+main .home .social-media ul li a{
+    color: var(--darkbrown);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+main .home .content h2{
+    color: var(--cream);
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+main .home .content a{
+    padding: 0.6rem 1.5rem;
+    background-color: var(--darkbrown);
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 9999px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cream);
+    box-shadow: 1px 0px 7px #000000;;
+}
+
+.ice-cream-product{
+    background-color: var(--cream);
+    padding-top: 3rem;
+}
+
+.ice-cream-product h2, .bread-product h2, .contact h2, footer h2{
+    text-align: center;
+    padding: 4rem 0 3rem;
+    font-size: 2.5rem;
+    color: var(--darkbrown);
+}
+
+.ice-cream-product .product-list, .bread-product .product-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.ice-cream-product .product-list .product-card{
+    background-color: white;
+    border-radius: 70px;
+    padding: 1.3rem 2.5rem;
+    margin: 1.3rem;
+}
+
+.ice-cream-product .product-list .product-card:hover{
+    box-shadow: 0 0 10px 2px var(--brownlight);
+}
+
+.ice-cream-product .product-list .product-card h3, .bread-product .product-card h3{
+    font-size: 2rem;
+    color: var(--darkbrown);
+    padding-bottom: 0.4rem;
+}
+
+.ice-cream-product .product-list .product-card img{
+    height: 250px;
+}
+
+.ice-cream-product .product-list .product-card p, .bread-product .product-list .product-card p{
+    font-size: 1.3rem;
+    font-weight: 2px;
+    color: var(--brownlight);
+    padding-bottom: 0.4rem;
+}
+
+.ice-cream-product .product-list .product-card a, .bread-product .product-list .product-card a{
+    background-color: var(--darkbrown);
+    padding: 0.7rem;
+    border-radius: 9999px;
+    line-height: 0.8rem;
+    color: var(--cream);
+    display: inline-block;
+}
+
+.bread-product{
+    background-color: var(--darkbrown);
+    background-image: url(../img/line1.png);
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+}
+
+.bread-product h2{
+    color: var(--cream);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.bread-product .product-list{
+    justify-content: space-evenly;
+}
+
+.bread-product .product-list .product-card{
+    background-color: var(--cream);
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.1rem;
+    box-shadow: 3px 2px 5px 1px #000000;
+    margin: 1.1rem;
+}
+
+.bread-product .product-list .product-card img {
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+    height: 270px;
+}
+
+.bread-product .product-list  .product-card-detail{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%; 
+}
+
+.promotion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--cream);
+    background-image: url(../img/line2.png);
+    background-repeat: no-repeat;
+    padding-block: 5rem 2rem;
+}
+
+.promotion p:nth-child(1){
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--darkbrown);
+}
+
+.promotion p:nth-child(2){
+    font-size: 1.5rem;
+    color: var(--tosca);
+    padding-bottom: 3rem;
+}
+
+.promotion p:nth-child(3){
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--darkbrown);
+}
+
+.promotion p:nth-child(4){
+    font-size: 1.8rem;
+    text-decoration: line-through;
+    color: var(--brownlight);
+}
+
+.contact{
+    background-color: var(--tosca);
+    background-image: url(../img/line1.png);
+    background-repeat: no-repeat;
+    padding-block: 3.5rem;
+}
+
+.contact h2{
+    color: white;
+    font-size: 3rem;
+}
+
+.contact .contact-card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact .contact-card .contact-detail, .contact .contact-card iframe{
+    padding-top: 2rem;
+}
+
+.contact .contact-card .contact-detail .cdt{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.contact iframe{
+    height: 300px;
+}
+
+footer .copyright{
+    color: var(--cream);
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--darkbrown);
+}
+
+/* ----- TABLET ------ */
+@media screen and (max-width: 768px){
+    header.navbar-container{
+        z-index: 9999;
+    }
+    header.navbar-container .logo{
+        padding: 0.5rem;
+    }
+
+    header.navbar-container .logo img{
+        height: 30px;
+    }
+
+    header.navbar-container .navbar-list ul{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--darkbrown);
+        width: 20rem;
+        height: 100vh;
+        transition: 0.8s ease-in;
+        display: inline-block;
+    }
+    header.navbar-container .navbar-list ul li:nth-child(6){
+        display: inline-block;
+        width: 100%;
+    }
+
+    header.navbar-container .navbar-list ul a{
+        display: inline-block;
+        padding-block: 1.8rem;
+        padding-left: 1.5rem;
+    }
+
+    header.navbar-container .navbar-list ul.active{
+        color: var(--darkbrown);
+        right: 0;
+    }
+
+    header.navbar-container .navbar-extra #menu{
+        display: inline-block;
+    }
+
+    header.navbar-container .navbar-extra{
+        display: flex;
+        gap: 17px;
+    }
+
+    header.navbar-container .order-cart{
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--darkbrown);
+        height: 100vh;
+        width: 20rem;
+    }
+
+    header.navbar-container .navbar-extra a:nth-child(1){
+        display: none;
+    }
+
+    header.navbar-container .order-cart .order-list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 1rem;
+        color: var(--cream);
+        border-bottom: 1px solid var(--cream);
+        padding-bottom: 0.7rem;
+    }
+    
+    header.navbar-container .order-cart .order-list a{
+        color: var(--cream);
+    }
+
+    header.navbar-container .order-cart .order-list img{
+        height: 80px;
+    }
+
+    header.navbar-container .order-cart.active{
+        right: 0;
+    }
+
+    .navbar-container .navbar-list ul li a:hover{
+        color: var(--tosca);
+        border-top: 1px solid var(--tosca);
+        border-bottom: 1px solid var(--tosca);
+        width: 100%;
+    }
+
+    main .home .content h2{
+        font-size: 2.6rem;
+    }
+
+    .ice-cream-product h2, .bread-product h2{
+        padding-inline: 2rem;
+        font-size: 2rem;
+    }
+
+    .ice-cream-product .product-list .product-card img{
+        height: 230px;
+    }
+
+    .bread-product .product-list .product-card{
+        margin: 2rem;
+        width: 220px;
+    }
+
+    .bread-product .product-list .product-card img{
+        height: 240px;
+    }
+
+    .promotion{
+        padding-inline: 1.5rem;
+        padding-top: 7.5rem;
+    }
+        
+    .promotion img{
+        height: 350px;
+    }
+
+    .promotion .product-detail{
+        padding-top: 1rem;
+    }
+    
+    .promotion .product-detail p:nth-child(1){
+        font-size: 3.5rem;
+    }
+
+    .promotion .product-detail p:nth-child(3){
+        font-size: 2rem;
+    }
+
+    .promotion .product-detail p:nth-child(4){
+        font-size: 1.5rem;
+    }
+
+    .contact iframe{
+        height: 200px;
+        width: 350px;
+        padding-top: 2rem;
+    }
+}
+
+/* ----- MOBILE ------ */
+@media screen and (max-width: 480px){
+    html{
+        font-size: 80%;
+    }
+
+    .ice-cream-product{
+        padding-top: 3rem
+    }
+
+    .ice-cream-product .product-list .product-card{
+        padding-bottom: 1.3rem; 
+    }
+}
+
+
+
+
+
+

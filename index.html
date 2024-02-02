@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery Creamu</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+  <body>
+    <header class="navbar-container">
+        <div class="logo">
+            <a href="#home"><img src="assets/img/logo-creamu.png" alt="logo-bakerycreamu"></a>
+        </div>
+        <nav class="navbar-list">
+            <ul id="navbar-menu" >
+                <li><a href="#home">Home</a></li>
+                <li><a href="#ice-cream">Ice Cream</a></li>
+                <li><a href="#bread">Bread</a></li>
+                <li><a href="#promotion">Promotion</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <div class="navbar-extra">
+            <a href="#">LOGIN</a>
+            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="menu"><i id="icon" data-feather="more-vertical"></i></a>
+        </div>
+    </header>
+    <main>
+        <article class="home" id="home">
+            <aside>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#" id="instagram"><i class="df" data-feather="instagram"></i></a></li>
+                        <li><a href="#" id="message-circle"><i class="df" data-feather="message-circle"></i></a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="content">
+                <h2>Enjoy <br> bread and <br> ice cream <br>in your day!</h2>
+                <a href="#">Order Now!</a>
+            </div>    
+        </article>
+
+        <article class="ice-cream-product" id="ice-cream">
+            <h2>choose your favorite ice cream!</h2>
+            <div class="product-list">
+                <div class="product-card">
+                    <img src="assets/img/ice-cream-strawberry.png" alt="Strawberry">
+                    <h3>Strawberry</h3>
+                    <p>IDR 22K</p>
+                    <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/img/ice-cream-kue-brownie.png" alt="Kue-Brownie">
+                    <h3>Brownie</h3>
+                    <p>IDR 24K</p>
+                    <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/img/ice-cream-chocolate.png" alt="Chocolate">
+                    <h3>Chocolate</h3>
+                    <p>IDR 22K</p>
+                    <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+                </div>
+                <div class="product-card">
+                    <img src="assets/img/ice-cream-oreo.png" alt="Biscuit">
+                    <h3>Oreo</h3>
+                    <p>IDR 23K</p>
+                    <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+                </div>
+            </div>
+        </article>
+
+       <article class="bread-product" id="bread">
+        <h2>choose your favorite bread!</h2>
+        <div class="product-list">
+            <div class="product-card effect-product">
+                <img src="assets/img/bread-croissant.png" alt="Croissant">
+                <h3>Croissant</h3>
+                <div class="product-card-detail">    
+                    <p>IDR 18K</p>
+                    <p>|</p>
+                    <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="product-card effect-product">
+                <img src="assets/img/bread-chocolate.png" alt="Chocolate">
+                <h3>Chocolate</h3>
+                <div class="product-card-detail">    
+                    <p>IDR 16K</p>
+                    <p>|</p>
+                    <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="product-card effect-product">
+                <img src="assets/img/bread-cheese.png" alt="Cheese">
+                <h3>Cheese</h3>
+                <div class="product-card-detail">    
+                    <p>IDR 17K</p>
+                    <p>|</p>
+                    <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+       </article>
+
+       <article class="promotion" id="promotion">
+            <img src="assets/img/ice-cream-cone-vanilla-chocolate.png" alt="ice cream vanilla and chocolate">
+            <div class="product-detail">
+                <p>Discount!</p>
+                <p>Ice cream cone vanilla and chocolate</p>
+                <p>IDR 13K</p>
+                <p>IDR 15K</p>
+            </div>
+       </article>
+
+       <article class="contact" id="contact">
+        <h2>Contact Us</h2>
+            <div class="contact-card">
+                <div class="contact-detail">
+                    <div class="cdt">
+                        <i data-feather="map-pin"></i>
+                        <p>Purwakarta</p>
+                    </div>
+                    <div class="cdt">
+                        <i data-feather="phone"></i>
+                        <p>+62 8218888999</p>
+                    </div>
+                    <div class="cdt">
+                        <i data-feather="mail"></i>
+                        <p>info@bakerycreamu.com</p>
+                     </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d537792.2829964724!2d107.24787572087706!3d-6.304401527616491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690e60454c6667%3A0x7ee7eda6d6e4556f!2sPurwakarta%2C%20Kec.%20Purwakarta%2C%20Kabupaten%20Purwakarta%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1693466435444!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+       </article>
+    </main>
+       <footer>
+         <div class="copyright">
+            &copy; 2023, Bakery Creamu
+         </div>
+       </footer>
+    <script>
+        feather.replace();
+      </script>
+       <script src="assets/js/script.js"></script>
+  </body>
+</html>
